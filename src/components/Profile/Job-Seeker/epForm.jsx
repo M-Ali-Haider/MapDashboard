@@ -4,7 +4,7 @@ import EPLabel from "./epLabel";
 
 const EditProfileForm = () => {
   const isSidebarOpen = useSelector((state) => state.sidebar.isSidebarOpen);
-  const elLabelLongLabel = isSidebarOpen ? "min-w-[300px]" : "min-w-[350px]";
+  const elLabelLongLabel = isSidebarOpen ? "min-w-[315px]" : "min-w-[350px]";
   return (
     <>
       <form className="">

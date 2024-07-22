@@ -1,7 +1,7 @@
-import Register from "@/components/Auth/Admin/Register";
+import AdminRegister from "@/components/Auth/Admin/adminRegister";
 
 const AdminRegisterPage = () => {
-  return <Register />;
+  return <AdminRegister />;
 };
 
 export default AdminRegisterPage;

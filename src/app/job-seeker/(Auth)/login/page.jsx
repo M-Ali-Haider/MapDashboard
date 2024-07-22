@@ -1,7 +1,7 @@
-import Login from "@/components/Auth/Admin/Login";
+import AdminLogin from "@/components/Auth/Admin/adminLogin";
 
 const AdminLoginPage = () => {
-  return <Login />;
+  return <AdminLogin />;
 };
 
 export default AdminLoginPage;

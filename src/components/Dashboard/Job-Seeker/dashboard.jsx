@@ -11,7 +11,7 @@ const JobSeekerDashboard = () => {
       <Stats />
       <HorizontalLayoutWrapper styles={"gap-6 mt-10"}>
         <RecommendedJobs />
-        <RightColumnWrapper styles={"max-w-[350px] gap-5"}>
+        <RightColumnWrapper styles={"max-w-[350px] min-w-[300px] gap-5"}>
           <CompleteYourProfile />
           <RecentActivity />
         </RightColumnWrapper>

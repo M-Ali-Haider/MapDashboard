@@ -9,7 +9,7 @@ const JobSeekerProfile = () => {
     <>
       <HorizontalLayoutWrapper styles={"gap-6 mt-10"}>
         <EditProfile />
-        <RightColumnWrapper styles={"max-w-[375px] gap-5"}>
+        <RightColumnWrapper styles={"min-w-[300px] max-w-[325px] gap-5"}>
           <ProfileDetails />
           <UploadDocuments />
         </RightColumnWrapper>

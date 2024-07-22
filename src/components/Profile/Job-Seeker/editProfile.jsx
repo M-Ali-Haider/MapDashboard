@@ -13,7 +13,9 @@ const EditProfile = () => {
   return (
     <>
       <BoxWrapper
-        styles={"flex-1 transition-[width] duration-300 ease-custom-ease"}
+        styles={
+          "flex-1 transition-[width] duration-300 ease-custom-ease min-w-[400px]"
+        }
       >
         <div className="flex justify-between flex-wrap">
           <h3 className="text-[28px] font-bold">Edit Profile</h3>

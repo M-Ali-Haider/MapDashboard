@@ -8,7 +8,7 @@ const PageWrapper = ({ children }) => {
     <div
       className={`${
         isSidebarOpen ? "px-9" : "px-2"
-      } pt-8 max-h-[calc(100vh-84px)] max-w-[1440px] overflow-y-scroll w-full  no-scrollbar transition-all duration-200 ease-custom-ease`}
+      } pt-7 max-h-[calc(100vh-84px)] max-w-[1440px] overflow-y-scroll w-full  no-scrollbar transition-all duration-200 ease-custom-ease`}
     >
       <div className={`min-h-screen pb-8`}>{children}</div>
     </div>

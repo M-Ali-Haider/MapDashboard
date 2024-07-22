@@ -1,7 +1,6 @@
 const ProfileProgressBar = () => {
   const percentageFromResponse = 70;
-  const filterPercentage = 100 - percentageFromResponse;
-  const style = `calc(100%-${filterPercentage}%)`;
+  const style = percentageFromResponse + "%";
   return (
     <>
       <div className="flex items-center gap-2">

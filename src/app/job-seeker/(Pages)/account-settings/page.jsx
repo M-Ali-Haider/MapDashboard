@@ -1,7 +1,9 @@
+import JobSeekerAccountSettings from "@/components/AccountSettings/Job-Seeker/accountSettings";
+
 const AccountSettingsPage = () => {
   return (
     <>
-      <div>AccountSettingsPage</div>
+      <JobSeekerAccountSettings />
     </>
   );
 };

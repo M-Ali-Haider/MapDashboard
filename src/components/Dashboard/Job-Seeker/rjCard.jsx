@@ -11,7 +11,7 @@ const RecommendedJobsCard = ({ item }) => {
   const [isSaved, setIsSaved] = useState(true);
   return (
     <>
-      <div className={`flex ${isSidebarOpen ? "gap-[2px]" : "gap-4"}`}>
+      <div className={`flex ${isSidebarOpen ? "gap-2" : "gap-4"}`}>
         <div className="flex-1">
           <div className="relative w-20 h-16">
             <Image

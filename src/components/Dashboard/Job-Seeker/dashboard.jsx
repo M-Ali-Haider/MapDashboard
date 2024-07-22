@@ -2,18 +2,20 @@ import Stats from "@/components/Stats/statsGrid";
 import RecommendedJobs from "./recommendedJobs";
 import CompleteYourProfile from "./completeProfile";
 import RecentActivity from "./recentActivity";
+import HorizontalLayoutWrapper from "@/components/Wrappers/horizontalLayout";
+import RightColumnWrapper from "@/components/Wrappers/rightColumnWrapper";
 
 const JobSeekerDashboard = () => {
   return (
     <>
       <Stats />
-      <div className="w-full h-full mt-10 flex flex-wrap gap-6">
+      <HorizontalLayoutWrapper styles={"gap-6 mt-10"}>
         <RecommendedJobs />
-        <div className="flex-1 flex flex-col gap-5 max-w-[350px] h-full">
+        <RightColumnWrapper styles={"max-w-[350px] gap-5"}>
           <CompleteYourProfile />
           <RecentActivity />
-        </div>
-      </div>
+        </RightColumnWrapper>
+      </HorizontalLayoutWrapper>
     </>
   );
 };

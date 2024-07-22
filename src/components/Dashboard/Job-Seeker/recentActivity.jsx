@@ -1,12 +1,13 @@
+import BoxWrapper from "@/components/Wrappers/boxWrapper";
 import RecentActivityGrid from "./raGrid";
 
 const RecentActivity = () => {
   return (
     <>
-      <div className="shadow-figmaShadow rounded-[30px] p-6 flex-1">
+      <BoxWrapper className="">
         <h3 className="text-xl mb-5">Recent Activity</h3>
         <RecentActivityGrid />
-      </div>
+      </BoxWrapper>
     </>
   );
 };

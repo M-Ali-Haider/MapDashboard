@@ -1,11 +1,12 @@
 import ProfileProgressBar from "./progressBar";
 import { profileChecks } from "@/utils/profileChecks";
 import ProfileChecks from "./profileChecks";
+import BoxWrapper from "@/components/Wrappers/boxWrapper";
 
 const CompleteYourProfile = () => {
   return (
     <>
-      <div className="shadow-figmaShadow rounded-[30px] p-6">
+      <BoxWrapper styles={""}>
         <h3 className="mb-1 text-xl">Complete Your Profile</h3>
         <ProfileProgressBar />
         <div className="flex flex-col gap-1 mt-2">
@@ -13,7 +14,7 @@ const CompleteYourProfile = () => {
             return <ProfileChecks key={index} item={item} />;
           })}
         </div>
-      </div>
+      </BoxWrapper>
     </>
   );
 };

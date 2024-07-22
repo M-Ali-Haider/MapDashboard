@@ -3,7 +3,7 @@ import Notification from "./notification";
 import Profile from "./profile";
 import HeaderSearchBar from "./searchbar";
 
-const HeaderControls = () => {
+const HeaderControls = ({ profileLink }) => {
   return (
     <>
       <div className="flex flex-1 justify-end items-center">
@@ -12,7 +12,7 @@ const HeaderControls = () => {
           <Message />
           <Notification />
         </div>
-        <Profile />
+        <Profile profileLink={profileLink} />
       </div>
     </>
   );

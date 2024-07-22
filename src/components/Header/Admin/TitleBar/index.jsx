@@ -1,12 +1,12 @@
 import BurgerMenu from "./burgerMenu";
 import DisplayPageName from "./displayPageName";
 
-const TitleBar = ({ navLinks }) => {
+const TitleBar = ({ allPaths }) => {
   return (
     <>
       <div className="flex items-center gap-3 md:gap-[14px]">
         <BurgerMenu />
-        <DisplayPageName navLinks={navLinks} />
+        <DisplayPageName allPaths={allPaths} />
       </div>
     </>
   );

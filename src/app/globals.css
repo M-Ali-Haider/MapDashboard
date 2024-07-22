@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+body {
+  background: #f4f5f6;
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +46,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */

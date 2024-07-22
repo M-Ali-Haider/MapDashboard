@@ -1,4 +1,4 @@
-import { timeAgo, timeAgoCustomStyle } from "@/utils/timeAgo";
+// import { timeAgo, timeAgoCustomStyle } from "@/utils/timeAgo";
 
 const RecentActivityCard = ({ item }) => {
   return (
@@ -8,7 +8,8 @@ const RecentActivityCard = ({ item }) => {
         <div>
           <div className="leading-[18px]">{item.desc}</div>
           <div className="leading-[18px] mt-1">
-            {timeAgo.format(new Date(item.datetime), timeAgoCustomStyle)}
+            {/* {timeAgo.format(new Date(item.datetime), timeAgoCustomStyle)} */}
+            12h ago
           </div>
         </div>
       </div>

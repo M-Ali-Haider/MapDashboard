@@ -1,6 +1,6 @@
 import JobSeekerDashboard from "@/components/Dashboard/Job-Seeker/dashboard";
 
-const AdminPage = () => {
+const JobSeekerPage = () => {
   return (
     <>
       <JobSeekerDashboard />
@@ -8,4 +8,4 @@ const AdminPage = () => {
   );
 };
 
-export default AdminPage;
+export default JobSeekerPage;

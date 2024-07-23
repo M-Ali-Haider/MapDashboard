@@ -50,7 +50,7 @@ const EditProfileForm = () => {
             styles={elLabelLongLabel}
           />
         </div>
-        <div className="grid grid-cols-3 gap-12">
+        <div className="md:grid md:grid-cols-3 gap-12">
           <EPLabel
             label={"address"}
             type={"number"}

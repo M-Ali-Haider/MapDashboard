@@ -14,7 +14,7 @@ const EditProfile = () => {
     <>
       <BoxWrapper
         styles={
-          "flex-1 transition-[width] duration-300 ease-custom-ease min-w-[400px]"
+          "flex-1 transition-[width] duration-300 ease-custom-ease md:min-w-[550px]"
         }
       >
         <div className="flex justify-between flex-wrap">

@@ -1,6 +1,6 @@
 import { stats } from "@/utils/stats";
 import StatCard from "./statCard";
-import StatsWrapper from "@/providers/StatsWrapper";
+import StatsWrapper from "../Wrappers/StatsWrapper";
 
 const Stats = () => {
   return (

@@ -1,7 +1,9 @@
+import JobSeekerContactUs from "@/components/ContactUs/Job-Seeker/contactUs";
+
 const ContactUsPage = () => {
   return (
     <>
-      <div>ContactUsPage</div>
+      <JobSeekerContactUs />
     </>
   );
 };

@@ -10,7 +10,7 @@ const Sidebar = ({ navLinks }) => {
       <nav
         className={`${
           isSidebarOpen ? "w-[368px] pl-9" : "w-0"
-        } bg-[#1A1C1E] py-9 h-screen overflow-hidden transition-all duration-500 ease-custom-ease text-white flex flex-col justify-between`}
+        } bg-[#1A1C1E] py-9 h-screen overflow-hidden transition-all duration-500 ease-custom-ease text-white hidden md:flex flex-col justify-between`}
       >
         <SidebarLogo navLinks={navLinks} />
         <SidebarLogOut />

@@ -11,7 +11,11 @@ const RecommendedJobsCard = ({ item }) => {
   const [isSaved, setIsSaved] = useState(true);
   return (
     <>
-      <div className={`flex ${isSidebarOpen ? "gap-2" : "gap-4"}`}>
+      <div
+        className={`flex flex-col md:flex-row ${
+          isSidebarOpen ? "md:gap-2" : "md:gap-4"
+        }`}
+      >
         <div className="flex-1">
           <div className="relative w-20 h-16">
             <Image
@@ -32,19 +36,22 @@ const RecommendedJobsCard = ({ item }) => {
             {item.type}
           </button>
         </div>
-        <div className="min-w-max flex flex-col items-end gap-6 pt-3">
-          <button onClick={() => setIsSaved(!isSaved)}>
+        <div className="min-w-max flex justify-between items-center pb-2 md:pb-0 md:justify-normal md:flex-col md:items-end md:gap-6 pt-3">
+          <div className="md:hidden capitalize font-semibold text-lg">
+            {item.location.city} , {item.location.country}
+          </div>
+          <button onClick={() => setIsSaved(!isSaved)} className="">
             {isSaved ? (
               <>
-                <SavedSVG />
+                <SavedSVG className="w-8 h-8 md:w-10 md:h-10" />
               </>
             ) : (
               <>
-                <UnSavedSVG />
+                <UnSavedSVG className="w-8 h-8 md:w-10 md:h-10" />
               </>
             )}
           </button>
-          <div className="capitalize font-semibold text-lg">
+          <div className="hidden md:block capitalize font-semibold text-lg">
             {item.location.city} , {item.location.country}
           </div>
         </div>
